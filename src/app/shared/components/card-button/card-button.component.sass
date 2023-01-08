@@ -1,0 +1,32 @@
+.card-btn
+  display: flex
+  flex-direction: row
+  justify-content: center
+  border: 1px solid #eee
+  border-radius: 4px
+  padding: 16px
+  background-color: #fafafa
+  box-sizing: content-box
+  cursor: pointer
+  transition: all 0.2s ease-in-out
+  line-height: 24px
+
+  .material-symbols-outlined
+    color: #888
+
+  .material-symbols-outlined:not(:last-child)
+    margin-right: 8px
+
+  .material-symbols-outlined:is(:last-child)
+    margin-left: 8px
+
+  &:hover
+    transform: translateY(-3px)
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35)
+
+    .card-btn-text
+      color: #1976d2
+      text-decoration: none
+
+    .material-symbols-outlined
+      color: #1976d2
